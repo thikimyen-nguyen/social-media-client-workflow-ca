@@ -5,3 +5,4 @@ This is a forked repo from Noroff for Workflow Course Assignment. In this CA, we
 Config Prettier, ESLint and Pre-commit hooks in workflow-formatting branch. The project requirements is to set up but not to run prettier and eslint.
 ### Testing
 Install and config Jest and Cypress on workflow branch for working on unit test and e2e test.
+[![Deploy static content to Pages](https://github.com/thikimyen-nguyen/social-media-client-workflow-ca/actions/workflows/pages.yml/badge.svg)](https://github.com/thikimyen-nguyen/social-media-client-workflow-ca/actions/workflows/pages.yml)
