@@ -35,7 +35,7 @@ describe ("Login function", () => {
   
     // Assertions for the successful case
     expect(result).toEqual(testProfile);
-    expect(localStorage.getItem("token")).toEqual(`"${testToken}"`);
+    expect(JSON.parse(localStorage.getItem("token"))).toEqual(testToken);
     
   });
 });
