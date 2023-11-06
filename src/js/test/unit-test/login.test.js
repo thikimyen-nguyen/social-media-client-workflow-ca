@@ -1,6 +1,5 @@
 import { login } from "../../api/auth/login.js";
-import localStorageMock from "../../mock/localStorage.mock.js";
-
+import { localStorageMock } from "../__mocks__/localStorage.js";
 
 const testEmail = "example@email.com";
 const testPassword = "password";
@@ -16,15 +15,17 @@ function mockFetchSuccess() {
     json: () => Promise.resolve({ accessToken: testToken, ...testProfile})
   })
 };
-function mockFetchFailure() {
-  return Promise.resolve ({
-    ok: false,
-    status: 404,
-    statusText: "Not Found"
-  })
-};
+// function mockFetchFailure() {
+//   return Promise.resolve ({
+//     ok: false,
+//     status: 404,
+//     statusText: "Not Found"
+//   })
+// };
 describe ("Login function", () => {
-  
+  beforeEach(() => {
+    localStorage.clear(); 
+  });
 
   it("fetches and stores a token in local storage when fetching sucessfully", async () => {
 
@@ -33,7 +34,6 @@ describe ("Login function", () => {
    
     const result = await login(testEmail, testPassword);
   
-    // Assertions for the successful case
     expect(result).toEqual(testProfile);
     expect(JSON.parse(localStorage.getItem("token"))).toEqual(testToken);
     
@@ -49,7 +49,7 @@ describe ("Login function", () => {
 //   try {
 //     await login(email, password);
 //   } catch (error) {
-//     // Assertions for the error case
+//    
 //     expect(error.message).toBe('Not Found');
 //   }
 // });
