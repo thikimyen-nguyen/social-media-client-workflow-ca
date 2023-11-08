@@ -1,4 +1,4 @@
-// The user can log in and access their profile
+// // The user can log in and access their profile
 const validEmail = "ntkyen@stud.noroff.no";
 const validPassword = "123456789";
 
