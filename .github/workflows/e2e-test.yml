@@ -15,7 +15,7 @@ jobs:
         uses: cypress-io/github-action@v4
         env:
           VALID_EMAIL: ntkyen@stud.noroff.no
-          VALID_PASSWORD: 123456789
+          VALID_PASSWORD: 12345678921323
 
         with:
           browser: electron
