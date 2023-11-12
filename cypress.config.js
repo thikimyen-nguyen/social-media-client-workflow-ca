@@ -8,6 +8,8 @@ module.exports = defineConfig({
   },
   env: {
     "VALID_EMAIL": "ntkyen@stud.noroff.no",
-    "VALID_PASSWORD": "123456789"
+    "VALID_PASSWORD": "123456789",
+    "INVALID_EMAIL": "invalid@email.com",
+    "INVALID_PASSWORD": "invalidpassword"
   }
 });

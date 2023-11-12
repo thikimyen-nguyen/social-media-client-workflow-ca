@@ -30,8 +30,8 @@ describe("User can log in and access profile page", () => {
 });
 
 // The user cannot submit the login form with invalid credentials and is shown a message
-const invalidEmail = "invalid@email.com";
-const invalidPassword = "invalidpassword";
+const invalidEmail = Cypress.env("INVALID_EMAIL");
+const invalidPassword = Cypress.env("INVALID_PASSWORD");
 
 describe("The user cannot submit the login form with invalid credentials and is shown a message", () => {
   beforeEach(() => {
