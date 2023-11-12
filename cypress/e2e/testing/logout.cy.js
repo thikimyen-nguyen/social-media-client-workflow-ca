@@ -1,6 +1,6 @@
 // The user can log out with the logout button
-const validEmail = "ntkyen@stud.noroff.no";
-const validPassword = "123456789";
+const validEmail = Cypress.env("VALID_EMAIL");
+const validPassword = Cypress.env("VALID_PASSWORD");
 
 describe("User can log out with logout button", () => {
   beforeEach(() => {

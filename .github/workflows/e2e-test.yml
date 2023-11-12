@@ -13,9 +13,5 @@ jobs:
 
       - name: run cypress tests with electron
         uses: cypress-io/github-action@v4
-        env:
-          VALID_EMAIL: ntkyen@stud.noroff.no
-          VALID_PASSWORD: 12345678921323
-
         with:
           browser: electron
