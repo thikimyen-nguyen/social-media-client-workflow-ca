@@ -23,10 +23,6 @@ Install and config on workflow branch for working on unit test and e2e test.
 The test files can be found in src/js/test with 02 test cases:
 - The login function fetches and stores a token in browser storage
 - The logout function clears the token from browser storage
-Run the test:
-
-```bash 
-npm test-unit
 
 #### E2E test
 The test files can be found in cypress/e2e/testing with 03 test cases: 
@@ -36,5 +32,5 @@ The test files can be found in cypress/e2e/testing with 03 test cases:
 Run the test:
 
 ```bash
-npm test-e2e-cli
+npm test
 

@@ -1,6 +1,6 @@
 // // The user can log in and access their profile
-const validEmail = "ntkyen@stud.noroff.no";
-const validPassword = "123456789";
+const validEmail = Cypress.env("VALID_EMAIL");
+const validPassword = Cypress.env("VALID_PASSWORD");
 
 describe("User can log in and access profile page", () => {
   beforeEach(() => {
