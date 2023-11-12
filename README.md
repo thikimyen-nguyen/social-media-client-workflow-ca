@@ -25,16 +25,15 @@ The test files can be found in src/js/test with 02 test cases:
 - The logout function clears the token from browser storage
 Run the test:
 
-```bash 
-npm test-unit
 
 #### E2E test
 The test files can be found in cypress/e2e/testing with 03 test cases: 
 - The user can log in and access their profile
 - The user cannot submit the login form with invalid credentials and is shown a message
 - The user can log out with the logout button
+- 
 Run the test:
 
 ```bash
-npm test-e2e-cli
+npm test
 
